@@ -32,6 +32,26 @@
         [resizeEdges]="{ bottom: true }"
       ></div>
       <div class="enviroment-container">
+        <app-notifications *ngIf="this.component === 'NotificationsComponent'"
+        ></app-notifications>
+        <app-user-profile *ngIf="this.component === 'UserProfileComponent'"
+        ></app-user-profile>
+        <app-footer *ngIf="this.component === 'FooterComponent'"
+        ></app-footer>
+        <app-navbar *ngIf="this.component === 'NavbarComponent'"
+        ></app-navbar>
+        <app-table-list *ngIf="this.component === 'TableListComponent'"
+        ></app-table-list>
+        <app-typography *ngIf="this.component === 'TypographyComponent'"
+        ></app-typography>
+        <app-dashboard *ngIf="this.component === 'DashboardComponent'"
+        ></app-dashboard>
+        <app-upgrade *ngIf="this.component === 'UpgradeComponent'"
+        ></app-upgrade>
+        <app-icons *ngIf="this.component === 'IconsComponent'"
+        ></app-icons>
+        <app-maps *ngIf="this.component === 'MapsComponent'"
+        ></app-maps>
       </div>
     </div>
   </div>
